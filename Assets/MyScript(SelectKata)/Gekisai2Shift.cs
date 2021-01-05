@@ -6,6 +6,14 @@ public class Gekisai2Shift : MonoBehaviour
 {
     [SerializeField] Toggle Switch;
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Keypad2) || Input.GetKey(KeyCode.Alpha2))
+        {
+            OnClickGekisai2ShiftButton();
+        }
+    }
+
     public void OnClickGekisai2ShiftButton()
     {
         if (Switch.isOn)

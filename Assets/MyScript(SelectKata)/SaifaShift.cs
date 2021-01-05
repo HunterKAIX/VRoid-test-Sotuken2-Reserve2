@@ -6,6 +6,14 @@ public class SaifaShift : MonoBehaviour
 {
     [SerializeField] Toggle Switch;
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Keypad3) || Input.GetKey(KeyCode.Alpha3))
+        {
+            OnClickSaifaShiftButton();
+        }
+    }
+
     public void OnClickSaifaShiftButton()
     {
         if (Switch.isOn)
